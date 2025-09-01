@@ -159,6 +159,7 @@ body {
   box-shadow: 0 8px 24px rgba(244, 92, 150, 0.15);
 }
 
+
 /* Contact Section */
 .contact {
   background-color: #fff0f6;
@@ -167,10 +168,10 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
   margin: 60px auto;
   max-width: 1000px;
+  text-align: center;
 }
 
 .contact p {
-  text-align: center;
   font-size: 1.1rem;
   margin-bottom: 30px;
   color: #555;
@@ -179,29 +180,35 @@ body {
 .contact-links {
   display: flex;
   justify-content: center;
+  gap: 40px;
   flex-wrap: wrap;
-  gap: 30px;
+  margin-top: 30px;
 }
 
-.contact-links a {
-  text-decoration: none;
-  font-weight: bold;
-  color: #f45c96;
+.contact-card {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  font-size: 1rem;
-  transition: color 0.3s ease;
+  text-decoration: none;
+  color: #f45c96;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffeef4;
+  padding: 20px;
+  border-radius: 12px;
+  width: 150px;
+  box-shadow: 0 4px 10px rgba(244, 92, 150, 0.1);
 }
 
-.contact-links a:hover {
-  color: #d94e85;
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(244, 92, 150, 0.2);
 }
 
 .ico-circle {
-  background-color: #ffe6ee;
+  background-color: #fff;
   border-radius: 50%;
-  padding: 10px;
-  margin-right: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -209,9 +216,16 @@ body {
 }
 
 .ico-circle i {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   color: #f45c96;
 }
+
+.platform-name {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #d94e85;
+}
+
 
 
 /* Footer */
